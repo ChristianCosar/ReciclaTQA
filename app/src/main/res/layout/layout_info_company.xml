@@ -25,13 +25,6 @@
                 android:padding="3dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_marginRight="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_action_phone_start_green"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_marginLeft="7dp"
@@ -44,10 +37,10 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
                         android:paddingRight="15dp"
-                        android:textColor="@color/primary_text"
-                        android:text="941 720 994"
-                        android:textSize="@dimen/primary_text"
-                        android:id="@+id/tv_company_cellphone" />
+                        android:textColor="@color/secondary_text"
+                        android:text="Celular"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_company_cellphone_title" />
                     <TextView
                         android:gravity="left"
                         android:layout_width="match_parent"
@@ -55,10 +48,11 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
                         android:paddingRight="15dp"
-                        android:textColor="@color/secondary_text"
-                        android:text="Celular"
-                        android:textSize="@dimen/aux_text"
-                        android:id="@+id/tv_company_cellphone_title" />
+                        android:textColor="@color/primary_text"
+                        android:text="941 720 994"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_company_cellphone" />
+
 
                 </LinearLayout>
             </LinearLayout>
@@ -74,13 +68,6 @@
                 android:padding="3dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_marginRight="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_action_home_green"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_marginLeft="7dp"
@@ -93,10 +80,10 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
                         android:paddingRight="15dp"
-                        android:textColor="@color/primary_text"
-                        android:text="Jr. Las Mimbreras 2227"
-                        android:textSize="@dimen/primary_text"
-                        android:id="@+id/tv_phone_company" />
+                        android:textColor="@color/secondary_text"
+                        android:text="Teléfono"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_phone_company_title" />
                     <TextView
                         android:gravity="left"
                         android:layout_width="match_parent"
@@ -104,10 +91,11 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
                         android:paddingRight="15dp"
-                        android:textColor="@color/secondary_text"
-                        android:text="Teléfono"
-                        android:textSize="@dimen/aux_text"
-                        android:id="@+id/tv_phone_company_title" />
+                        android:textColor="@color/primary_text"
+                        android:text="Jr. Las Mimbreras 2227"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_phone_company" />
+
 
                 </LinearLayout>
 
@@ -168,29 +156,12 @@
                 android:padding="3dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_marginRight="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_action_mail_green"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_marginLeft="7dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                    <TextView
-                        android:gravity="left"
-                        android:layout_width="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="15dp"
-                        android:textColor="@color/primary_text"
-                        android:text="hello@reciclapp.com"
-                        android:textSize="@dimen/primary_text"
-                        android:id="@+id/tv_company_email" />
+
                     <TextView
                         android:gravity="left"
                         android:layout_width="match_parent"
@@ -202,6 +173,17 @@
                         android:text="Email"
                         android:textSize="@dimen/aux_text"
                         android:id="@+id/tv_company_email_title" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/primary_text"
+                        android:text="hello@reciclapp.com"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_company_email" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -212,48 +194,46 @@
                 android:layout_marginTop="3dp"
                 android:layout_height="1dp"
                 android:background="@color/line_background"/>
+
             <LinearLayout
-                android:orientation="horizontal"
-                android:padding="3dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_marginRight="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_action_coffee_green"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_marginLeft="7dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical">
                     <TextView
-                        android:gravity="left"
+                        android:id="@+id/tv_company_m_f_title"
                         android:layout_width="match_parent"
-                        android:layout_gravity="center_vertical"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
                         android:paddingLeft="5dp"
                         android:paddingRight="15dp"
-                        android:textColor="@color/primary_text"
-                        android:text="9:00 am - 10:00 pm"
-                        android:textSize="@dimen/primary_text"
-                        android:id="@+id/tv_company_m_f" />
-                    <TextView
-                        android:gravity="left"
-                        android:layout_width="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="15dp"
-                        android:textColor="@color/secondary_text"
                         android:text="Atención de Lunes a Viernes"
-                        android:textSize="@dimen/aux_text"
-                        android:id="@+id/tv_company_m_f_title" />
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/aux_text" />
+                    <TextView
+                        android:id="@+id/tv_company_m_f"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:text="9:00 am - 10:00 pm"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/primary_text" />
+
+
 
                 </LinearLayout>
             </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_marginLeft="60dp"
@@ -275,7 +255,7 @@
                     android:layout_height="wrap_content" />
                 <LinearLayout
                     android:orientation="vertical"
-                    android:layout_marginLeft="57dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
@@ -283,23 +263,22 @@
                         android:layout_width="match_parent"
                         android:layout_gravity="center_vertical"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="15dp"
-                        android:textColor="@color/primary_text"
-                        android:text="Cerrado"
-                        android:textSize="@dimen/primary_text"
-                        android:id="@+id/tv_company_holyday" />
-                    <TextView
-                        android:gravity="left"
-                        android:layout_width="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
                         android:paddingRight="15dp"
                         android:textColor="@color/secondary_text"
                         android:text="Atención sábados, domingos y feriados"
                         android:textSize="@dimen/aux_text"
                         android:id="@+id/tv_company_holyday_title" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/primary_text"
+                        android:text="Cerrado"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_company_holyday" />
+
 
                 </LinearLayout>
             </LinearLayout>
@@ -315,18 +294,23 @@
                 android:padding="3dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_marginRight="15dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_action_rocket_green"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_marginLeft="7dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/secondary_text"
+                        android:text="Reciclamos"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_recycle_prices" />
                     <TextView
                         android:gravity="left"
                         android:visibility="gone"
@@ -340,24 +324,14 @@
 
                         android:textSize="@dimen/primary_text"
                         android:id="@+id/tv_recycle_title" />
+
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/list_item_recycling"
-                        android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
-                        android:orientation="vertical"
-                        android:layout_height="wrap_content">
-                    </android.support.v7.widget.RecyclerView>
-                    <TextView
-                        android:gravity="left"
-                        android:layout_width="match_parent"
-                        android:layout_gravity="center_vertical"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="15dp"
-                        android:textColor="@color/secondary_text"
-                        android:text="Reciclamos"
-                        android:textSize="@dimen/aux_text"
-                        android:id="@+id/tv_recycle_prices" />
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical"></android.support.v7.widget.RecyclerView>
+
 
                 </LinearLayout>
             </LinearLayout>

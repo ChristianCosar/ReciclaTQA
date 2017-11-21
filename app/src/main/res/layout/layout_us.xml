@@ -29,13 +29,7 @@
                 android:padding="0dp"
                 android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/background"
-                        android:layout_width="match_parent"
-                        android:layout_height="130dp"
-                        android:scaleType="centerCrop"
-                        android:layout_gravity="top"
-                        android:background="@drawable/header" />
+
 
                 <android.support.v7.widget.CardView
                     android:layout_margin="5dp"
@@ -85,7 +79,16 @@
                             android:textColor="@color/primary_text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
+
                     </LinearLayout>
+                    <ImageView
+                        android:id="@+id/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top"
+                        android:background="@drawable/header"
+                        android:visibility="invisible"/>
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>

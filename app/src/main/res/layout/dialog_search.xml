@@ -85,7 +85,7 @@
                 <TextView
                     android:textSize="@dimen/primary_text"
                     android:textColor="@color/primary_text"
-                    android:text="Empresas Formales"
+                    android:text="Empresas Jurídicas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -98,18 +98,21 @@
                     android:id="@+id/check_reciclapp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+
                 <TextView
-                    android:textSize="@dimen/primary_text"
-                    android:textColor="@color/primary_text"
-                    android:text="Empresas Reciclapp"
+                    android:id="@+id/textView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="Empresas ReciclaT"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/primary_text" />
 
             </LinearLayout>
             <LinearLayout
-                android:orientation="horizontal"
+                android:orientation="horizontal"    
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="invisible">
                 <CheckBox
                     android:id="@+id/check_verify"
                     android:layout_width="wrap_content"

@@ -50,7 +50,7 @@
     <string name="compandy_juridic">Empresa jurídica</string>
     <string name="type_company">Tipo de Empresa</string>
     <string name="type_company_legal">Empresa Juridica</string>
-    <string name="type_company_reciclapp">MyPe dedicada al reciclaje</string>
+    <string name="type_company_reciclapp">PyMes dedicada al reciclaje</string>
     <string name="detail_type_company_legal">Empresa Juridica</string>
     <string name="detail_type_company_reciclapp">Empresa Reciclapp</string>
     <string name="compandy_reciclapp">Empresa Reciclapp</string>
@@ -65,7 +65,7 @@
     <string name="RUC">RUC</string>
 
     <!--recycle-->
-    <string name="recycle_me">Yo reciclo</string>
+    <string name="recycle_me">Yo quiero reciclar</string>
     <string name="company_recycle">¿Qué podemos reciclar?</string>
 
     <string name="perm_camera">Se requieren permisos para poder acceder a la cámara</string>

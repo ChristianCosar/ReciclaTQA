@@ -203,7 +203,7 @@ public class CreateCompanyFragment extends BaseFragment implements Validator.Val
     @Override
     protected void initActionBar() {
         if (type.equals("Reciclapp")) {
-            actionMiddle.setText("Registro de PyMe");
+            actionMiddle.setText("Registro de MyPe");
         } else {
             actionMiddle.setText("Registro de Punto");
         }

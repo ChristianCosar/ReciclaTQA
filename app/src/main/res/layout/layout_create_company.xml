@@ -10,403 +10,387 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <FrameLayout
-        android:layout_width="match_parent"
+        <FrameLayout
+            android:id="@+id/frame_container"
 
-        android:id="@+id/frame_container"
-        android:weightSum="1"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ScrollView
-                android:id="@+id/scrollView"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <LinearLayout
-                    android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:id="@+id/scrollView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_marginBottom="15dp"
-                        android:layout_height="300dp">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                        <android.support.design.widget.CoordinatorLayout
-                            android:layout_gravity="center"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="300dp">
-                            <LinearLayout
-                                android:padding="0dp"
-                                android:background="@color/primary"
-                                android:layout_marginBottom="0dp"
-                                android:orientation="vertical"
-                                android:layout_gravity="top"
+                            android:layout_height="300dp"
+                            android:layout_marginBottom="15dp">
+
+                            <android.support.design.widget.CoordinatorLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:layout_gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:layout_marginBottom="0dp"
+                                    android:background="@color/primary"
+                                    android:orientation="vertical"
+                                    android:padding="0dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="300dp"
+                                        android:layout_gravity="top">
+
+                                        <ImageView
+                                            android:id="@+id/iv_company_perfil"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:adjustViewBounds="true"
+                                            android:background="@drawable/company_building"
+                                            android:drawingCacheQuality="low"
+                                            android:fitsSystemWindows="true"
+
+                                            android:scaleType="centerCrop"
+
+                                            />
+
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                                <android.support.design.widget.FloatingActionButton
+                                    android:id="@+id/fab_photo_company"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|bottom"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:src="@drawable/ic_camera_alt" />
+                            </android.support.design.widget.CoordinatorLayout>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_error"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:text="@string/error"
+                            android:textColor="@color/red"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_ruc"
+                            style="@style/MyiCon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_Ruc"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
-                                <RelativeLayout
+
+                                <EditText
+                                    android:id="@+id/tv_ruc_company"
+                                    style="@style/editText"
                                     android:layout_width="match_parent"
-                                    android:layout_height="300dp"
-                                    android:layout_gravity="top">
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:scaleType="centerCrop"
-                                        android:id="@+id/iv_company_perfil"
-                                        android:adjustViewBounds="true"
-                                        android:fitsSystemWindows="true"
-                                        android:drawingCacheQuality="low"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="5dp"
+                                    android:hint="RUC (*)"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:nextFocusForward="@+id/tv_name_social" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
 
-                                        android:background="@drawable/company_building"
-
-                                        />
-
-
-                                </RelativeLayout>
-                            </LinearLayout>
-                            <android.support.design.widget.FloatingActionButton
-                                android:layout_gravity="right|bottom"
-                                android:layout_marginTop="30dp"
-                                android:layout_marginBottom="5dp"
-                                android:layout_marginRight="10dp"
-                                android:id="@+id/fab_photo_company"
-                                android:src="@drawable/ic_camera_alt"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.CoordinatorLayout>
-                    </LinearLayout>
-
-
-                    <TextView
-                        android:id="@+id/tv_error"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:paddingTop="10dp"
-                        android:text="@string/error"
-                        android:textColor="@color/red"
-                        android:textSize="16sp"
-                        android:visibility="gone" />
-                    <LinearLayout
-                        android:padding="5dp"
-                        android:id="@+id/layout_ruc"
-                        android:layout_width="match_parent"
-                        style="@style/MyiCon"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_marginLeft="5dp"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_action_document"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:id="@+id/input_Ruc"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:hint="RUC (*)"
-                                android:imeOptions="actionNext"
-                                android:nextFocusForward="@+id/tv_name_social"
-                                android:inputType="number"
-                                style="@style/editText"
-                                android:id="@+id/tv_ruc_company"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        style="@style/MyiCon"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_marginLeft="5dp"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_action_business"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:id="@+id/input_name_company"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:hint="Razón Social (*)"
-
-                                android:imeOptions="actionNext"
-                                android:nextFocusForward="@+id/tv_company_direction"
-                                android:inputType="textPersonName|textCapSentences|textCapWords"
-                                style="@style/editText"
-                                android:id="@+id/tv_name_social"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        style="@style/MyiCon"
-                        android:visibility="gone"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_marginLeft="5dp"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_action_rocket_off"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:hint="Nombre Comercial"
-                                android:imeOptions="actionNext"
-                                android:focusable="false"
-                                android:nextFocusForward="@+id/tv_company_location"
-                                android:inputType="textPersonName|textCapSentences|textCapWords"
-                                style="@style/editText"
-                                android:id="@+id/tv_name_company"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_marginLeft="5dp"
+                        <LinearLayout
                             style="@style/MyiCon"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_action_location_off"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <android.support.design.widget.TextInputLayout
-                            android:visibility="gone"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:hint="Define punto del mapa"
-                                android:inputType="text"
-                                android:focusable="false"
-                                style="@style/editText"
-                                android:id="@+id/tv_company_location"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_name_company"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/tv_name_social"
+                                    style="@style/editText"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="5dp"
+                                    android:hint="Razón Social (*)"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textPersonName|textCapSentences|textCapWords"
+                                    android:nextFocusForward="@+id/tv_company_direction" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/MyiCon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/ic_action_rocket_off" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/tv_name_company"
+                                    style="@style/editText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="5dp"
+                                    android:focusable="false"
+                                    android:hint="Nombre Comercial"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textPersonName|textCapSentences|textCapWords"
+                                    android:nextFocusForward="@+id/tv_company_location" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
 
                             <Button
                                 android:id="@+id/btn_select_point"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_gravity="bottom"
-                                android:gravity="center|center_vertical"
-                                android:padding="5dp"
-                                android:background="@drawable/button_default_off"
                                 android:layout_width="match_parent"
                                 android:layout_height="40dp"
-                                android:text="Definir punto en el mapa"
-                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/button_default_off"
+                                android:gravity="center|center_vertical"
+                                android:padding="5dp"
+                                android:text="Google Maps"
                                 android:textAllCaps="false"
+                                android:textColor="@color/white"
                                 android:textSize="@dimen/primary_text" />
 
-
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:padding="5dp"
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_marginLeft="5dp"
-                            style="@style/MyiCon"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_action_home"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:id="@+id/input_direction"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:hint="Dirección (*)"
-
-                                android:imeOptions="actionNext"
-                                android:nextFocusForward="@+id/tv_company_cellphone"
-                                android:inputType="textPersonName|textCapSentences|textCapWords"
-                                style="@style/editText"
-                                android:id="@+id/tv_company_direction"
+                            <android.support.design.widget.TextInputLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
 
-                    </LinearLayout>
-                    <LinearLayout
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_marginLeft="5dp"
-                            style="@style/MyiCon"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_action_phone_start"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <android.support.design.widget.TextInputLayout
+                                <EditText
+                                    android:id="@+id/tv_company_location"
+                                    style="@style/editText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="5dp"
+                                    android:focusable="false"
+                                    android:hint="Define punto del mapa"
+                                    android:inputType="text" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:id="@+id/input_cellphone"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:hint="Celular (*)"
-                                android:inputType="phone"
-                                style="@style/editText"
-                                android:id="@+id/tv_company_cellphone"
-                                android:imeOptions="actionNext"
-                                android:nextFocusForward="@+id/tv_company_phone"
+
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_direction"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_marginLeft="5dp"
-                            style="@style/MyiCon"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/old_phone"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <android.support.design.widget.TextInputLayout
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/tv_company_direction"
+                                    style="@style/editText"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="5dp"
+                                    android:hint="Dirección (*)"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textPersonName|textCapSentences|textCapWords"
+                                    android:nextFocusForward="@+id/tv_company_cellphone" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:id="@+id/input_phone"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:hint="Teléfono"
-                                android:imeOptions="actionNext"
-                                android:nextFocusForward="@+id/tv_atention_l_v"
-                                android:inputType="phone"
-                                style="@style/editText"
-                                android:id="@+id/tv_company_phone"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_cellphone"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
+                                android:layout_height="wrap_content">
 
-                    </LinearLayout>
+                                <EditText
+                                    android:id="@+id/tv_company_cellphone"
+                                    style="@style/editText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="5dp"
+                                    android:hint="Celular (*)"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="phone"
+                                    android:nextFocusForward="@+id/tv_company_phone" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
 
-
-                    <LinearLayout
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_marginLeft="5dp"
-                            style="@style/MyiCon"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_action_coffee"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <android.support.design.widget.TextInputLayout
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:id="@+id/input_Atention_l_v"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:hint="Horario  L-V (*)"
-                                style="@style/editText"
-                                android:inputType="text"
-                                android:imeOptions="actionNext"
-                                android:nextFocusForward="@+id/tv_atention_m_f_h"
-                                android:id="@+id/tv_atention_l_v"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
 
-                    </LinearLayout>
-                    <LinearLayout
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <android.support.design.widget.TextInputLayout
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/tv_company_phone"
+                                    style="@style/editText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="5dp"
+                                    android:hint="Teléfono"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="phone"
+                                    android:nextFocusForward="@+id/tv_atention_l_v" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_marginLeft="53dp"
-                            android:id="@+id/input_Atention_m_f_h"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginRight="5dp"
-                                android:hint="Horario S-D (*)"
-                                style="@style/editText"
-                                android:inputType="text"
-                                android:imeOptions="actionNext"
-                                android:nextFocusForward="@+id/tv_company_web"
-                                android:id="@+id/tv_atention_m_f_h"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_Atention_l_v"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
+                                android:layout_height="wrap_content">
 
-                    </LinearLayout>
+                                <EditText
+                                    android:id="@+id/tv_atention_l_v"
+                                    style="@style/editText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="5dp"
+                                    android:hint="Horario  L-V (*)"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:nextFocusForward="@+id/tv_atention_m_f_h" />
+                            </android.support.design.widget.TextInputLayout>
 
+                        </LinearLayout>
 
-                    <LinearLayout
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_marginLeft="5dp"
-                            style="@style/MyiCon"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_action_mail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <android.support.design.widget.TextInputLayout
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:id="@+id/input_web"
-                            android:layout_height="wrap_content" >
-                            <EditText
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginRight="5dp"
-                                android:hint="Email"
-                                android:imeOptions="actionDone"
-                                android:inputType="textWebEmailAddress"
-                                style="@style/editText"
-                                android:id="@+id/tv_company_web"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_Atention_m_f_h"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </android.support.design.widget.TextInputLayout>
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp">
+
+                                <EditText
+                                    android:id="@+id/tv_atention_m_f_h"
+                                    style="@style/editText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:hint="Horario S-D (*)"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:nextFocusForward="@+id/tv_company_web" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_web"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/tv_company_web"
+                                    style="@style/editText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="5dp"
+                                    android:hint="Email"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textWebEmailAddress" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_register"
+                            style="@style/Btn"
+                            android:layout_gravity="bottom"
+                            android:text="@string/next"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/primary_text" />
                     </LinearLayout>
+                </ScrollView>
 
-                    <Button
-                        android:id="@+id/btn_register"
-                        android:layout_gravity="bottom"
-                        style="@style/Btn"
-                        android:text="@string/next"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/primary_text" />
-                </LinearLayout>
-            </ScrollView>
-
-        </LinearLayout>
+            </LinearLayout>
 
 
-    </FrameLayout>
+        </FrameLayout>
 
     </LinearLayout>
 
