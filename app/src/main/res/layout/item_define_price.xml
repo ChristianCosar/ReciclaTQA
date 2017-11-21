@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ic_action_rocket_off"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_icon_categories"
+                android:layout_width="35dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_category_tittle"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:layout_gravity="center_vertical"
+                android:text="Nombre de Categoría"
+                android:textSize="@dimen/primary_text" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/layout_border_price"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_money"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_title"
+                    android:padding="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="S/."
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <EditText
+                android:background="@drawable/edittext_rectangle"
+                android:layout_gravity="right"
+                android:id="@+id/text_category_price"
+                android:gravity="center"
+                android:padding="5dp"
+                android:imeOptions="actionDone"
+                android:hint="Precio"
+                android:inputType="numberDecimal"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

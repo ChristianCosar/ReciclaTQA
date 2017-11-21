@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bground"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_reciclapp_green"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/login_normal"
+                style="@style/Btn"
+                android:text="@string/login_us"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/login_business"
+                style="@style/Btn"
+                android:layout_gravity="bottom|center"
+                android:text="@string/i_am_company"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/login_facebook"
+                style="@style/com_facebook_loginview_default_style"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_facebook"
+                android:text="@string/login_facebook"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/tv_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/error"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/secondary_text"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

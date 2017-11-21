@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#00A4FC</color>
+    <color name="primary_dark">#0470AB</color>
+    <color name="primary_light">#53BFF9</color>
+    <color name="accent">#90D1BB</color>
+    <color name="primary_text">#2d2727</color>
+    <color name="text_title">#3b3333</color>
+    <color name="secondary_text">#706f6f</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="background_image">#94ffffff</color>
+    <color name="background_circle">#949494</color>
+    <color name="line_background">#e2aeaeae</color>
+    <color name="background_card">#e2e2e2</color>
+    <color name="windows_backgroung">#dedede</color>
+    <color name="multiple_selectable_item">#a897f4e6</color>
+    <color name="background_image_wall">#E8E8E8</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="corner_card">#4ec8f4</color>
+    <color name="corner_card_off">#584f4f</color>
+    <color name="red">#910000</color>
+
+    <!-- Colores Facebook - Twitter Flat Buttons -->
+
+    <color name="color_flat_facebook_a">#3a5994</color>
+    <color name="color_flat_facebook_b">#1060b2</color>
+    <color name="color_flat_twitter_a">#2ac6f5</color>
+    <color name="color_flat_twitter_b">#07b3eb</color>
+
+    <color name="color_transparent">#00ffffff</color>
+    <color name="color_transparent_focus">#07ffffff</color>
+</resources>

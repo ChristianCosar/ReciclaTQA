@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"></include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/frame_container"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="top"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="0dp"
+                android:padding="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="300dp">
+
+                    <android.support.design.widget.CoordinatorLayout
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+                        <LinearLayout
+                            android:padding="0dp"
+                            android:background="@color/primary"
+                            android:layout_marginBottom="0dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:layout_gravity="top">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/iv_company_perfil"
+                                    android:adjustViewBounds="true"
+                                    android:fitsSystemWindows="true"
+                                    android:drawingCacheQuality="low"
+
+                                    android:background="@drawable/company_building"
+
+                                    />
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <android.support.design.widget.FloatingActionButton
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/fab_photo_company"
+                            android:src="@drawable/ic_camera_alt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.CoordinatorLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:padding="0dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary_text"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/tv_company_name"
+                                android:text="Reciclapp Company"
+                                android:textSize="@dimen/primary_text" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:id="@+id/tv_company_name_title"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/name_company"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:visibility="gone"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:id="@+id/ib_name_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/windows_backgroung"/>
+
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:id="@+id/layout_ruc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary_text"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/tv_company_ruc"
+                                android:text=""
+                                android:textSize="@dimen/primary_text" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:id="@+id/tv_company_ruc_title"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="RUC de la empresa"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:visibility="gone"
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:id="@+id/ib_ruc_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/separator_decorator"
+                        android:background="@color/windows_backgroung"/>
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary_text"
+                                android:id="@+id/tv_company_email"
+                                android:layout_gravity="center_vertical"
+                                android:text="Email"
+                                android:textSize="@dimen/primary_text" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_company_email_title"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="Email de la empresa"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:id="@+id/ib_email_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/windows_backgroung"/>
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary_text"
+                                android:id="@+id/tv_company_direction"
+                                android:layout_gravity="center_vertical"
+                                android:text="Dirección"
+                                android:textSize="@dimen/primary_text" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_company_direction_title"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/addres_company"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:id="@+id/ib_direction_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/windows_backgroung"/>
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary_text"
+                                android:id="@+id/tv_company_point"
+                                android:layout_gravity="center_vertical"
+                                android:text="Punto en el mapa"
+                                android:textSize="@dimen/primary_text" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:id="@+id/tv_company_point_title"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="Punto en el mapa"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:id="@+id/ib_point_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/windows_backgroung"/>
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_company_cellphone"
+                                android:textColor="@color/primary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="Celular"
+                                android:textSize="@dimen/primary_text" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:id="@+id/tv_company_cellphone_title"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="Celular de la empresa"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/ib_cellphone_company"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/windows_backgroung"/>
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_company_phone"
+                                android:textColor="@color/primary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="Telefono"
+                                android:textSize="@dimen/primary_text" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:id="@+id/tv_company_phone_title"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="Teléfono de la empresa"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/ib_phone_company"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/windows_backgroung"/>
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary_text"
+                                android:id="@+id/tv_company_m_f"
+                                android:layout_gravity="center_vertical"
+                                android:text="Horario"
+                                android:textSize="@dimen/primary_text" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_company_m_f_title"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="Horario de lunes a viernes"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/ib_l_v_company"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/windows_backgroung"/>
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary_text"
+                                android:id="@+id/tv_company_holyday"
+                                android:layout_gravity="center_vertical"
+                                android:text="Horario"
+                                android:textSize="@dimen/primary_text" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_company_holyday_title"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="Horario sabado, domingos y feriados"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/ib_holiday_company"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/windows_backgroung"/>
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/list_item_recycling"
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="190dp"
+                                android:orientation="horizontal"
+                                android:layout_height="55dp">
+                            </android.support.v7.widget.RecyclerView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_company_recycling_title"
+                                android:textColor="@color/secondary_text"
+                                android:layout_gravity="center_vertical"
+                                android:text="Reciclamos"
+                                android:textSize="@dimen/aux_text" />
+
+                        </LinearLayout>
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_add_green"
+                            android:layout_width="wrap_content"
+                            android:visibility="gone"
+                            android:id="@+id/ib_add_recycling_company"
+                            android:layout_height="match_parent" />
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:background="@drawable/button_transparent_off"
+                            android:src="@drawable/ic_action_edit_green"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/ib_add_category_company"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</LinearLayout>

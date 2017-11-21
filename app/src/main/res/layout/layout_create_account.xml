@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"></include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/frame_container"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:background="@color/background_image_wall"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="158dp"
+                    android:layout_height="158dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_imageview">
+                    <ImageView
+                        android:layout_width="153dp"
+                        android:layout_height="153dp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/tv_icon_perfil"
+                        android:background="@drawable/ic_face" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="@string/error"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        style="@style/MyiCon"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/input_email"
+                            android:layout_height="wrap_content" >
+                            <EditText
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:hint="Correo electrónico"
+                                android:imeOptions="actionNext"
+                                android:nextFocusForward="@+id/tv_password_user"
+                                android:inputType="textEmailAddress"
+                                style="@style/editText"
+                                android:id="@+id/tv_email_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/input_password"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/tv_password_user"
+                                style="@style/editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:hint="Contraseña"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:nextFocusForward="@+id/tv_name_user" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <EditText
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:hint="Nombres"
+                                android:imeOptions="actionNext"
+                                android:nextFocusForward="@+id/tv_last_name_user"
+                                android:inputType="textPersonName|textCapSentences|textCapWords"
+                                style="@style/editText"
+                                android:id="@+id/tv_name_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginLeft="5dp"
+                            style="@style/MyiCon"
+                            android:visibility="gone"
+
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_action_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/tv_last_name_user"
+                                style="@style/editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:hint="Apellidos"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName|textCapSentences|textCapWords"
+                                android:nextFocusForward="@+id/tv_phone_user" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <EditText
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:hint="Número telefónico"
+                                android:inputType="phone"
+                                style="@style/editText"
+                                android:imeOptions="actionNext"
+                                android:nextFocusForward="@+id/tv_birth_date"
+                                android:id="@+id/tv_phone_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <EditText
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:hint="DNI"
+                                android:inputType="number"
+                                android:imeOptions="actionDone"
+                                android:nextFocusForward="@+id/tv_birth_date"
+                                style="@style/editText"
+                                android:id="@+id/tv_dni_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_birthdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <EditText
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:hint="Fecha de nacimiento"
+                                android:inputType="date"
+                                style="@style/editText"
+                                android:id="@+id/tv_birth_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:textColor="@color/secondary_text"
+                                android:layout_marginRight="12dp"
+                                android:textSize="@dimen/primary_text"
+                                android:text="Masculino"
+                                android:id="@+id/rb_rigth"
+                                android:theme="@style/MyRadioButton"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:layout_marginLeft="@dimen/primary_text"
+                                android:textSize="@dimen/primary_text"
+                                android:text="Femenino"
+                                android:textColor="@color/secondary_text"
+                                android:id="@+id/rb_left"
+                                android:theme="@style/MyRadioButton"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_gravity="bottom"
+            style="@style/Btn"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primary_text" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_camera_alt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

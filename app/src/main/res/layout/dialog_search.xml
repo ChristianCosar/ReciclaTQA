@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/frame_container"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textColor="@color/primary_dark"
+                android:text="Buscar"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tv_search_title" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/secondary_text"
+                android:textColor="@color/secondary_text"
+                android:padding="6dp"
+                android:text="Si tienes GPS activado, se buscarán las empresas más cercanas a ti"
+                android:layout_gravity="center"
+                android:id="@+id/tv_gps_active" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/primary_text"
+                android:textColor="@color/primary_text"
+                android:text="Categorias"
+                android:padding="5dp"
+                android:layout_gravity="left"
+                android:id="@+id/tv_categories" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_height="1dp"
+                android:background="@color/primary_light"/>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:padding="5dp"
+                    android:id="@+id/grid_items"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_height="1dp"
+                android:background="@color/primary_light"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <CheckBox
+                    android:id="@+id/check_juridic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/primary_text"
+                    android:textColor="@color/primary_text"
+                    android:text="Empresas Formales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <CheckBox
+                    android:id="@+id/check_reciclapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/primary_text"
+                    android:textColor="@color/primary_text"
+                    android:text="Empresas Reciclapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <CheckBox
+                    android:id="@+id/check_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/primary_text"
+                    android:textColor="@color/primary_text"
+                    android:text="Verificado por Reciclapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:background="@color/primary_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/button_default"
+                android:text="Buscar"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textSize="@dimen/primary_text" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_image_green_off"
+            android:padding="3dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_action_cancel"
+            android:layout_margin="10dp"
+            android:id="@+id/btn_close"
+
+            />
+    </FrameLayout>
+    </ScrollView>
+</LinearLayout>

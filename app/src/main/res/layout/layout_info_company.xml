@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="20dp"
+
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_phone_start_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/primary_text"
+                        android:text="941 720 994"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_company_cellphone" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/secondary_text"
+                        android:text="Celular"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_company_cellphone_title" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="60dp"
+
+                android:layout_marginTop="3dp"
+                android:layout_height="1dp"
+                android:background="@color/line_background"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_home_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/primary_text"
+                        android:text="Jr. Las Mimbreras 2227"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_phone_company" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/secondary_text"
+                        android:text="Teléfono"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_phone_company_title" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/old_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/primary_text"
+                        android:text="+51 389-3545"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_phone" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/secondary_text"
+                        android:text="Teléfono"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_phone_title" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="60dp"
+
+                android:layout_marginTop="3dp"
+                android:layout_height="1dp"
+                android:background="@color/line_background"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_mail_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/primary_text"
+                        android:text="hello@reciclapp.com"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_company_email" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/secondary_text"
+                        android:text="Email"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_company_email_title" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="60dp"
+
+                android:layout_marginTop="3dp"
+                android:layout_height="1dp"
+                android:background="@color/line_background"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_coffee_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/primary_text"
+                        android:text="9:00 am - 10:00 pm"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_company_m_f" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/secondary_text"
+                        android:text="Atención de Lunes a Viernes"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_company_m_f_title" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="60dp"
+
+                android:layout_marginTop="3dp"
+                android:layout_height="1dp"
+                android:background="@color/line_background"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_document"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="57dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/primary_text"
+                        android:text="Cerrado"
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_company_holyday" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/secondary_text"
+                        android:text="Atención sábados, domingos y feriados"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_company_holyday_title" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="60dp"
+
+                android:layout_marginTop="3dp"
+                android:layout_height="1dp"
+                android:background="@color/line_background"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_rocket_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="left"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/primary_text"
+                        android:text="Reciclamos"
+
+                        android:textSize="@dimen/primary_text"
+                        android:id="@+id/tv_recycle_title" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/list_item_recycling"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+                    <TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/secondary_text"
+                        android:text="Reciclamos"
+                        android:textSize="@dimen/aux_text"
+                        android:id="@+id/tv_recycle_prices" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="60dp"
+
+                android:layout_marginTop="3dp"
+                android:layout_height="1dp"
+                android:background="@color/line_background"/>
+
+            <Button
+                style="@style/Btn"
+                android:visibility="gone"
+                android:layout_gravity="bottom"
+                android:id="@+id/btn_go_map"
+                android:text="Ver Mapa"
+                android:textColor="@color/white"
+                android:textSize="@dimen/primary_text" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>
